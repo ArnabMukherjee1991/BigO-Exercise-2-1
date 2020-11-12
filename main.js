@@ -1,5 +1,6 @@
 // What is the Big O of the below function? (Hint, you may want to go line by line)
 function anotherFunChallenge(input) {
+  let t1 = performance.now();
   let a = 5;
   let b = 10;
   let c = 50;
@@ -14,4 +15,7 @@ function anotherFunChallenge(input) {
     let q = j * 2;
   }
   let whoAmI = "I don't know";
+  let t2 = performance.now();
+  console.log('Finished after '+ (t2-t1) + ' ms');
 }
+anotherFunChallenge(1000000)
